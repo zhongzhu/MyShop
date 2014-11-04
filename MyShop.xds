@@ -8,12 +8,12 @@
         },
         "canvasControls": {
             "viewportSize": {
-                "name": "iPad",
+                "name": "iPhone",
                 "builtIn": true,
-                "height": 1024,
-                "width": 768
+                "height": 480,
+                "width": 320
             },
-            "viewportOrientation": "landscape"
+            "viewportOrientation": "portrait"
         },
         "urlPrefix": "",
         "exportPath": "",
