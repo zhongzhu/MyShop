@@ -1,0 +1,12 @@
+{
+	success: true,
+	data: [
+		{imgUrl: 'resources/image/carousel/1.jpg'},
+		{imgUrl: 'resources/image/carousel/2.jpg'},
+		{imgUrl: 'resources/image/carousel/3.jpg'},
+		{imgUrl: 'resources/image/carousel/4.jpg'},
+		{imgUrl: 'resources/image/carousel/5.jpg'},
+		{imgUrl: 'resources/image/carousel/6.jpg'},
+		{imgUrl: 'resources/image/carousel/7.jpg'}
+	]
+}

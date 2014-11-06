@@ -1,0 +1,28 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "HomeCarouselItem"
+    },
+    "name": "MyModel",
+    "designerId": "f29d96fc-295a-4650-bcc9-8b9b06d38e35",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "imgUrl"
+            },
+            "name": "field",
+            "designerId": "65000a06-539d-444c-8c92-187db9a410f7"
+        }
+    ]
+}

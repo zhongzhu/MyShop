@@ -24,7 +24,6 @@ Ext.define('MyShop.view.Main', {
     ],
 
     config: {
-        activeItem: 1,
         items: [
             {
                 xtype: 'home',

@@ -1,0 +1,70 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Home",
+        "requires": [
+            "MyShop.view.Home.Home",
+            "Ext.Img",
+            "Ext.carousel.Carousel"
+        ]
+    },
+    "name": "MyController",
+    "designerId": "51854981-64fd-4c03-9865-bb32df80e930",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#homeCarousel",
+                "designer|targetType": "Ext.carousel.Carousel",
+                "fn": "onCarouselInitialize",
+                "implHandler": [
+                    "console.log('onCarouselInitialize');",
+                    "var store = Ext.getStore('HomeCarouselItems');",
+                    "",
+                    "store.load({",
+                    "    callback: function(records, operation, success) {",
+                    "        var items = [];",
+                    "",
+                    "        Ext.each(records, function(record) {",
+                    "            items.push({",
+                    "                xtype: 'image',",
+                    "                src: record.get('imgUrl')",
+                    "            });",
+                    "        });",
+                    "",
+                    "        component.setItems(items);",
+                    "    },",
+                    "    scope: this",
+                    "});"
+                ],
+                "name": "initialize"
+            },
+            "name": "onCarouselInitialize",
+            "designerId": "c5f87032-5f7f-487e-beb4-928ebc162c05"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "homeCarousel",
+                "selector": "#homeCarousel"
+            },
+            "name": "homeCarousel",
+            "designerId": "89bac85b-a3ad-4b50-923e-f1c768f71824"
+        }
+    ]
+}

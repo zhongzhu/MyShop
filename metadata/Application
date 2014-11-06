@@ -6,11 +6,19 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "Home"
+        ],
+        "models": [
+            "HomeCarouselItem"
+        ],
         "name": "MyShop",
+        "stores": [
+            "HomeCarouselItems"
+        ],
         "views": [
             "Main",
-            "Home.Home",
-            "Home.HomeFirst"
+            "Home.Home"
         ]
     },
     "name": "Application",

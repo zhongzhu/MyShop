@@ -20,10 +20,18 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
+    models: [
+        'HomeCarouselItem'
+    ],
+    stores: [
+        'HomeCarouselItems'
+    ],
     views: [
         'Main',
-        'Home.Home',
-        'Home.HomeFirst'
+        'Home.Home'
+    ],
+    controllers: [
+        'Home'
     ],
     name: 'MyShop',
 

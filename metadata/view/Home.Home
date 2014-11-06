@@ -7,11 +7,40 @@
     "codeClass": null,
     "userConfig": {
         "designer|userAlias": "home",
-        "designer|userClassName": "Home.Home",
-        "requires": [
-            "Ext.carousel.Carousel"
-        ]
+        "designer|userClassName": "Home.Home"
     },
     "name": "MyNavigationView",
-    "designerId": "6ddbb969-20e4-4701-87e9-429fbc5d5a30"
+    "designerId": "6ddbb969-20e4-4701-87e9-429fbc5d5a30",
+    "cn": [
+        {
+            "type": "Ext.carousel.Carousel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoDestroy": false,
+                "height": 140,
+                "id": "homeCarousel",
+                "itemId": null
+            },
+            "name": "MyCarousel",
+            "designerId": "d488a281-ac52-4085-b9e6-3e995d1ece8d"
+        },
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "hidden": true
+            },
+            "name": "MyNavigationBar",
+            "designerId": "4e6f0ba0-ffe9-4cc1-bd65-9fd97d45e9da"
+        }
+    ]
 }

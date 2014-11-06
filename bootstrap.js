@@ -667,8 +667,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
+  "MyShop.controller.Home": [],
+  "MyShop.model.HomeCarouselItem": [],
+  "MyShop.store.HomeCarouselItems": [],
   "MyShop.view.Home.Home": [],
-  "MyShop.view.Home.HomeFirst": [],
   "MyShop.view.Main": []
 });
 
@@ -1401,11 +1403,11 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "MyShop.controller.Home": [],
+  "MyShop.model.HomeCarouselItem": [],
+  "MyShop.store.HomeCarouselItems": [],
   "MyShop.view.Home.Home": [
     "widget.home"
-  ],
-  "MyShop.view.Home.HomeFirst": [
-    "widget.homefirst"
   ],
   "MyShop.view.Main": [
     "widget.main"
