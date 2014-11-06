@@ -1,0 +1,17 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "home",
+        "designer|userClassName": "Home.Home",
+        "requires": [
+            "Ext.carousel.Carousel"
+        ]
+    },
+    "name": "MyNavigationView",
+    "designerId": "6ddbb969-20e4-4701-87e9-429fbc5d5a30"
+}

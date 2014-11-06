@@ -6,3 +6,4 @@ bootstrap.json
 touch/resources/sass/.sass-cache
 app.json.*
 build.xml
+build.settings

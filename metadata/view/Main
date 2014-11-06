@@ -6,26 +6,28 @@
     },
     "codeClass": null,
     "userConfig": {
+        "activeItem": 1,
         "designer|initialView": true,
-        "designer|userClassName": "MainView",
-        "itemId": "mainView"
+        "designer|userAlias": "main",
+        "designer|userClassName": "Main",
+        "itemId": null
     },
     "designerId": "6ff421e4-b183-4a75-a035-b579678217fa",
     "cn": [
         {
-            "type": "Ext.Container",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "iconCls": "info",
-                "itemId": "tab1",
-                "title": "Tab 1"
+                "iconCls": "home",
+                "title": "首页"
             },
-            "name": "MyContainer",
-            "designerId": "11683103-9560-4063-a3c4-5e9b28a5f36c"
+            "name": "home.home",
+            "designerId": "2d6b0b69-d79c-48ee-8b7b-eb31ebd8674d",
+            "masterInstanceId": "6ddbb969-20e4-4701-87e9-429fbc5d5a30"
         },
         {
             "type": "Ext.Container",
@@ -35,9 +37,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "iconCls": "info",
+                "iconCls": "search",
                 "itemId": "tab2",
-                "title": "Tab 2"
+                "title": "搜索"
             },
             "name": "MyContainer1",
             "designerId": "7148fb0a-516c-4a93-9c4d-c35ecaeecb34"
@@ -50,12 +52,42 @@
             },
             "codeClass": null,
             "userConfig": {
-                "iconCls": "info",
+                "iconCls": "list",
                 "itemId": "tab3",
-                "title": "Tab 3"
+                "title": "分类"
             },
             "name": "MyContainer2",
             "designerId": "1a31a091-9dd3-42e8-9fea-1f1b9538b758"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "cart",
+                "itemId": "tab4",
+                "title": "购物车"
+            },
+            "name": "MyContainer3",
+            "designerId": "78c31d5b-cea2-4f80-97e1-71062482914f"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "user",
+                "itemId": "tab5",
+                "title": "我的"
+            },
+            "name": "MyContainer4",
+            "designerId": "7f3a6abc-c62d-4686-9e26-e7f9582c9c99"
         },
         {
             "type": "Ext.tab.Bar",

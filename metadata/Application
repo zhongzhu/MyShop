@@ -8,7 +8,9 @@
     "userConfig": {
         "name": "MyShop",
         "views": [
-            "MainView"
+            "Main",
+            "Home.Home",
+            "Home.HomeFirst"
         ]
     },
     "name": "Application",

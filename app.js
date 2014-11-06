@@ -21,13 +21,15 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MainView'
+        'Main',
+        'Home.Home',
+        'Home.HomeFirst'
     ],
     name: 'MyShop',
 
     launch: function() {
 
-        Ext.create('MyShop.view.MainView', {fullscreen: true});
+        Ext.create('MyShop.view.Main', {fullscreen: true});
     }
 
 });

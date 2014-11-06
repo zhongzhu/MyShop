@@ -15,15 +15,22 @@
             },
             "viewportOrientation": "portrait"
         },
-        "urlPrefix": "",
-        "exportPath": "",
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "E:/xampp/htdocs/MyShopPhoneGap",
         "spacesToIndent": 4,
         "sdkPath": "",
         "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
-        "generateArchitectVersion": true
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        },
+        "lockUrlPrefix": true,
+        "installStatus": "Not Installed"
     },
     "xdsVersion": "3.1.0",
     "xdsBuild": 1934,
@@ -32,7 +39,9 @@
     "framework": "touch24",
     "viewOrderMap": {
         "view": [
-            "6ff421e4-b183-4a75-a035-b579678217fa"
+            "6ff421e4-b183-4a75-a035-b579678217fa",
+            "6ddbb969-20e4-4701-87e9-429fbc5d5a30",
+            "fdbe4a94-c859-4cfa-8935-768d674185fe"
         ],
         "store": [],
         "controller": [],

@@ -1,0 +1,35 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "homefirst",
+        "designer|userClassName": "Home.HomeFirst",
+        "scrollable": [
+            "{direction:'vertical', directionLock:true}"
+        ]
+    },
+    "name": "MyContainer",
+    "configAlternates": {
+        "scrollable": "object"
+    },
+    "designerId": "fdbe4a94-c859-4cfa-8935-768d674185fe",
+    "cn": [
+        {
+            "type": "Ext.carousel.Carousel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 140
+            },
+            "name": "MyCarousel1",
+            "designerId": "c775df89-52a5-41aa-964c-b406547b3502"
+        }
+    ]
+}
