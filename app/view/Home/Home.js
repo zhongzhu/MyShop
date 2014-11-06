@@ -18,23 +18,36 @@ Ext.define('MyShop.view.Home.Home', {
     alias: 'widget.home',
 
     requires: [
+        'Ext.navigation.Bar',
         'Ext.carousel.Carousel',
-        'Ext.navigation.Bar'
+        'Ext.Img'
     ],
 
     config: {
-        items: [
-            {
-                xtype: 'carousel',
-                height: 140,
-                id: 'homeCarousel',
-                autoDestroy: false
-            }
-        ],
         navigationBar: {
             docked: 'top',
             hidden: true
-        }
+        },
+        items: [
+            {
+                xtype: 'container',
+                layout: 'vbox',
+                scrollable: 'vertical',
+                items: [
+                    {
+                        xtype: 'carousel',
+                        height: 132,
+                        id: 'homeCarousel',
+                        autoDestroy: false
+                    },
+                    {
+                        xtype: 'image',
+                        height: 50,
+                        src: 'resources/image/logo.png'
+                    }
+                ]
+            }
+        ]
     }
 
 });

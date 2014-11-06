@@ -13,22 +13,6 @@
     "designerId": "6ddbb969-20e4-4701-87e9-429fbc5d5a30",
     "cn": [
         {
-            "type": "Ext.carousel.Carousel",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "autoDestroy": false,
-                "height": 140,
-                "id": "homeCarousel",
-                "itemId": null
-            },
-            "name": "MyCarousel",
-            "designerId": "d488a281-ac52-4085-b9e6-3e995d1ece8d"
-        },
-        {
             "type": "Ext.navigation.Bar",
             "reference": {
                 "name": "navigationBar",
@@ -41,6 +25,52 @@
             },
             "name": "MyNavigationBar",
             "designerId": "4e6f0ba0-ffe9-4cc1-bd65-9fd97d45e9da"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "vbox",
+                "scrollable": "vertical"
+            },
+            "name": "MyContainer",
+            "designerId": "560c2580-9977-4cdb-9812-6605244b2e7d",
+            "cn": [
+                {
+                    "type": "Ext.carousel.Carousel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoDestroy": false,
+                        "height": 132,
+                        "id": "homeCarousel",
+                        "itemId": null
+                    },
+                    "name": "MyCarousel",
+                    "designerId": "d488a281-ac52-4085-b9e6-3e995d1ece8d"
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 50,
+                        "src": "resources/image/logo.png"
+                    },
+                    "name": "MyImg",
+                    "designerId": "555d4b10-7182-4475-b819-e4c5d1d60da2"
+                }
+            ]
         }
     ]
 }
