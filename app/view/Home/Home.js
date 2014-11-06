@@ -20,7 +20,8 @@ Ext.define('MyShop.view.Home.Home', {
     requires: [
         'Ext.navigation.Bar',
         'Ext.carousel.Carousel',
-        'Ext.Img'
+        'Ext.Img',
+        'Ext.field.Search'
     ],
 
     config: {
@@ -31,19 +32,26 @@ Ext.define('MyShop.view.Home.Home', {
         items: [
             {
                 xtype: 'container',
+                autoDestroy: false,
                 layout: 'vbox',
                 scrollable: 'vertical',
                 items: [
                     {
                         xtype: 'carousel',
                         height: 132,
-                        id: 'homeCarousel',
-                        autoDestroy: false
+                        id: 'homeCarousel'
                     },
                     {
                         xtype: 'image',
                         height: 50,
                         src: 'resources/image/logo.png'
+                    },
+                    {
+                        xtype: 'searchfield',
+                        border: 1,
+                        margin: '5 5 5 30',
+                        style: 'border-color: #ccc; border-style: solid;border-radius:20px',
+                        width: '70%'
                     }
                 ]
             }

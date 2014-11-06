@@ -34,6 +34,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "autoDestroy": false,
                 "layout": "vbox",
                 "scrollable": "vertical"
             },
@@ -48,7 +49,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "autoDestroy": false,
                         "height": 132,
                         "id": "homeCarousel",
                         "itemId": null
@@ -69,6 +69,28 @@
                     },
                     "name": "MyImg",
                     "designerId": "555d4b10-7182-4475-b819-e4c5d1d60da2"
+                },
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": 1,
+                        "centered": null,
+                        "height": null,
+                        "label": null,
+                        "labelWidth": null,
+                        "margin": "5 5 5 30",
+                        "padding": null,
+                        "placeHolder": null,
+                        "style": "border-color: #ccc; border-style: solid;border-radius:20px",
+                        "width": "70%"
+                    },
+                    "name": "MySearchField",
+                    "designerId": "6ed3051b-14f3-419a-abea-37edb5a207eb"
                 }
             ]
         }
