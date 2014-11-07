@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Promotion"
+    },
+    "name": "MyModel",
+    "designerId": "8f38d037-dacf-42ee-b178-e60341289b35",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title"
+            },
+            "name": "field3",
+            "designerId": "d1884514-00c9-4433-a256-deecc6e23459"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "url"
+            },
+            "name": "field4",
+            "designerId": "d074bc68-9c55-4f0c-aa10-f41066b15d77"
+        }
+    ]
+}

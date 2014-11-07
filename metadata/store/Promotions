@@ -1,0 +1,46 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "Promotions",
+        "model": "Promotion",
+        "storeId": "Promotions"
+    },
+    "name": "MyJsonStore",
+    "designerId": "e91a0a64-20f7-4828-95d5-b8e4ada39686",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/home/promotions.json"
+            },
+            "name": "MyAjaxProxy1",
+            "designerId": "47133fb9-0720-44da-a530-cac0b5f83cc3",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader1",
+                    "designerId": "894e3b30-eaa8-4b95-8924-d2ce31378a3b"
+                }
+            ]
+        }
+    ]
+}

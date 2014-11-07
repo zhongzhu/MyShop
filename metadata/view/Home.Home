@@ -27,7 +27,7 @@
             "designerId": "4e6f0ba0-ffe9-4cc1-bd65-9fd97d45e9da"
         },
         {
-            "type": "Ext.Container",
+            "type": "Ext.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -36,9 +36,17 @@
             "userConfig": {
                 "autoDestroy": false,
                 "layout": "vbox",
-                "scrollable": "vertical"
+                "scrollable": [
+                    "{",
+                    "    direction: 'vertical',",
+                    "    directionLock: true",
+                    "}"
+                ]
             },
-            "name": "MyContainer",
+            "name": "MyPanel",
+            "configAlternates": {
+                "scrollable": "object"
+            },
             "designerId": "560c2580-9977-4cdb-9812-6605244b2e7d",
             "cn": [
                 {
@@ -83,14 +91,49 @@
                         "height": null,
                         "label": null,
                         "labelWidth": null,
-                        "margin": "5 5 5 30",
+                        "margin": null,
                         "padding": null,
                         "placeHolder": null,
-                        "style": "border-color: #ccc; border-style: solid;border-radius:20px",
-                        "width": "70%"
+                        "style": "border-color: #ccc; border-style: solid",
+                        "width": null
                     },
                     "name": "MySearchField",
                     "designerId": "6ed3051b-14f3-419a-abea-37edb5a207eb"
+                },
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "data": null,
+                        "height": 240,
+                        "id": "promotionList",
+                        "itemId": "",
+                        "store": "Promotions"
+                    },
+                    "name": "MyList",
+                    "designerId": "82b6b48f-2ee7-4063-8430-2b2e98d4bc2b",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "itemTpl",
+                                "implHandler": [
+                                    "<div><h2 class=\"racks-h2\">{title}</h2><img width=100% src=\"{url}\"></div>"
+                                ]
+                            },
+                            "name": "itemTpl",
+                            "designerId": "c7a2547d-c866-49f7-8bd0-080fbf95ff6d"
+                        }
+                    ]
                 }
             ]
         }

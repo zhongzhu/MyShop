@@ -10,11 +10,13 @@
             "Home"
         ],
         "models": [
-            "HomeCarouselItem"
+            "HomeCarouselItem",
+            "Promotion"
         ],
         "name": "MyShop",
         "stores": [
-            "HomeCarouselItems"
+            "HomeCarouselItems",
+            "Promotions"
         ],
         "views": [
             "Main",

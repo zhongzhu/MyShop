@@ -65,6 +65,44 @@
             },
             "name": "homeCarousel",
             "designerId": "89bac85b-a3ad-4b50-923e-f1c768f71824"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#promotionList",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListShow",
+                "implHandler": [
+                    "console.log('onListShow');"
+                ],
+                "name": "show"
+            },
+            "name": "onListShow",
+            "designerId": "a1c56876-123c-432a-a973-f827c584771c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#promotionList",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListInitialize",
+                "implHandler": [
+                    "console.log('onListInitialize');"
+                ],
+                "name": "initialize"
+            },
+            "name": "onListInitialize",
+            "designerId": "830e397d-4535-4446-b45e-dde265663a37"
         }
     ]
 }

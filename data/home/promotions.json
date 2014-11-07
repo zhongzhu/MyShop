@@ -1,0 +1,9 @@
+{
+	success: true,
+    data: [
+        {
+            title: '玩转11.11',
+            url: 'resources/image/promotion/promotion1.jpg'
+        }
+    ]
+}

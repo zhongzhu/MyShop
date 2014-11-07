@@ -19,9 +19,12 @@ Ext.define('MyShop.view.Home.Home', {
 
     requires: [
         'Ext.navigation.Bar',
+        'Ext.Panel',
         'Ext.carousel.Carousel',
         'Ext.Img',
-        'Ext.field.Search'
+        'Ext.field.Search',
+        'Ext.dataview.List',
+        'Ext.XTemplate'
     ],
 
     config: {
@@ -31,10 +34,13 @@ Ext.define('MyShop.view.Home.Home', {
         },
         items: [
             {
-                xtype: 'container',
+                xtype: 'panel',
                 autoDestroy: false,
                 layout: 'vbox',
-                scrollable: 'vertical',
+                scrollable: {
+                    direction: 'vertical',
+                    directionLock: true
+                },
                 items: [
                     {
                         xtype: 'carousel',
@@ -49,9 +55,17 @@ Ext.define('MyShop.view.Home.Home', {
                     {
                         xtype: 'searchfield',
                         border: 1,
-                        margin: '5 5 5 30',
-                        style: 'border-color: #ccc; border-style: solid;border-radius:20px',
-                        width: '70%'
+                        style: 'border-color: #ccc; border-style: solid'
+                    },
+                    {
+                        xtype: 'list',
+                        height: 240,
+                        id: 'promotionList',
+                        itemId: '',
+                        itemTpl: [
+                            '<div><h2 class="racks-h2">{title}</h2><img width=100% src="{url}"></div>'
+                        ],
+                        store: 'Promotions'
                     }
                 ]
             }

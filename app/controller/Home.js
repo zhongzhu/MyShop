@@ -30,6 +30,10 @@ Ext.define('MyShop.controller.Home', {
         control: {
             "#homeCarousel": {
                 initialize: 'onCarouselInitialize'
+            },
+            "#promotionList": {
+                show: 'onListShow',
+                initialize: 'onListInitialize'
             }
         }
     },
@@ -53,6 +57,14 @@ Ext.define('MyShop.controller.Home', {
             },
             scope: this
         });
+    },
+
+    onListShow: function(component, eOpts) {
+        console.log('onListShow');
+    },
+
+    onListInitialize: function(component, eOpts) {
+        console.log('onListInitialize');
     }
 
 });
