@@ -1,5 +1,5 @@
 /* _arch-vars-start */
-
+$toolbar-base-color: rgba(25,133,208,1);
 
 @import 'sencha-touch/default';
 @import 'sencha-touch/default/all';
@@ -7,6 +7,7 @@
 
 /* _arch-other-start */
 @include icon('cart');
+@include icon('camera');
 
 .racks-h2 {
 font-size: 1.14em;

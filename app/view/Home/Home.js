@@ -19,10 +19,11 @@ Ext.define('MyShop.view.Home.Home', {
 
     requires: [
         'Ext.navigation.Bar',
-        'Ext.Panel',
-        'Ext.carousel.Carousel',
         'Ext.Img',
         'Ext.field.Search',
+        'Ext.Button',
+        'Ext.Panel',
+        'Ext.carousel.Carousel',
         'Ext.dataview.List',
         'Ext.XTemplate'
     ],
@@ -30,7 +31,25 @@ Ext.define('MyShop.view.Home.Home', {
     config: {
         navigationBar: {
             docked: 'top',
-            hidden: true
+            hidden: false,
+            items: [
+                {
+                    xtype: 'image',
+                    height: 33,
+                    width: 63,
+                    src: 'resources/image/logo.png'
+                },
+                {
+                    xtype: 'searchfield',
+                    flex: 1,
+                    maxWidth: 200,
+                    placeHolder: '搜索商城/店铺'
+                },
+                {
+                    xtype: 'button',
+                    iconCls: 'camera'
+                }
+            ]
         },
         items: [
             {
@@ -46,16 +65,6 @@ Ext.define('MyShop.view.Home.Home', {
                         xtype: 'carousel',
                         height: 132,
                         id: 'homeCarousel'
-                    },
-                    {
-                        xtype: 'image',
-                        height: 50,
-                        src: 'resources/image/logo.png'
-                    },
-                    {
-                        xtype: 'searchfield',
-                        border: 1,
-                        style: 'border-color: #ccc; border-style: solid'
                     },
                     {
                         xtype: 'list',

@@ -20,11 +20,60 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|uiInterfaceName": "dark",
                 "docked": "top",
-                "hidden": true
+                "hidden": false
             },
             "name": "MyNavigationBar",
-            "designerId": "4e6f0ba0-ffe9-4cc1-bd65-9fd97d45e9da"
+            "designerId": "4e6f0ba0-ffe9-4cc1-bd65-9fd97d45e9da",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 33,
+                        "src": "resources/image/logo.png",
+                        "width": 63
+                    },
+                    "name": "MyImg",
+                    "designerId": "555d4b10-7182-4475-b819-e4c5d1d60da2"
+                },
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "layout|flex": 1,
+                        "maxWidth": 200,
+                        "placeHolder": "搜索商城/店铺"
+                    },
+                    "name": "MySearchField1",
+                    "designerId": "88edefdf-752e-4cc7-87cb-623cdea796cc"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": null,
+                        "iconCls": "camera",
+                        "text": null
+                    },
+                    "name": "MyButton",
+                    "designerId": "0251208c-2145-4d7f-9bab-17f4a9e66d75"
+                }
+            ]
         },
         {
             "type": "Ext.Panel",
@@ -63,42 +112,6 @@
                     },
                     "name": "MyCarousel",
                     "designerId": "d488a281-ac52-4085-b9e6-3e995d1ece8d"
-                },
-                {
-                    "type": "Ext.Img",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "height": 50,
-                        "src": "resources/image/logo.png"
-                    },
-                    "name": "MyImg",
-                    "designerId": "555d4b10-7182-4475-b819-e4c5d1d60da2"
-                },
-                {
-                    "type": "Ext.field.Search",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "border": 1,
-                        "centered": null,
-                        "height": null,
-                        "label": null,
-                        "labelWidth": null,
-                        "margin": null,
-                        "padding": null,
-                        "placeHolder": null,
-                        "style": "border-color: #ccc; border-style: solid",
-                        "width": null
-                    },
-                    "name": "MySearchField",
-                    "designerId": "6ed3051b-14f3-419a-abea-37edb5a207eb"
                 },
                 {
                     "type": "Ext.dataview.List",
