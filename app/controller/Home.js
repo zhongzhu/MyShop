@@ -19,7 +19,8 @@ Ext.define('MyShop.controller.Home', {
     requires: [
         'MyShop.view.Home.Home',
         'Ext.Img',
-        'Ext.carousel.Carousel'
+        'Ext.carousel.Carousel',
+        'Ext.MessageBox'
     ],
 
     config: {
@@ -40,6 +41,13 @@ Ext.define('MyShop.controller.Home', {
 
     onCarouselInitialize: function(component, eOpts) {
         console.log('onCarouselInitialize');
+
+        component.on({
+            delegate: '> image',
+            scope: this,
+            tap: 'onAutoCarouselItemTap'
+        });
+
         var store = Ext.getStore('HomeCarouselItems');
 
         store.load({
@@ -49,7 +57,8 @@ Ext.define('MyShop.controller.Home', {
                 Ext.each(records, function(record) {
                     items.push({
                         xtype: 'image',
-                        src: record.get('imgUrl')
+                        src: record.get('imgUrl'),
+                        record: record
                     });
                 });
 
@@ -65,6 +74,10 @@ Ext.define('MyShop.controller.Home', {
 
     onListInitialize: function(component, eOpts) {
         console.log('onListInitialize');
+    },
+
+    onAutoCarouselItemTap: function(component, e, eOpts) {
+        Ext.Msg.alert('Title', component.getRecord().get('imgUrl'), Ext.emptyFn);
     }
 
 });

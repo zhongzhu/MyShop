@@ -10,7 +10,8 @@
         "requires": [
             "MyShop.view.Home.Home",
             "Ext.Img",
-            "Ext.carousel.Carousel"
+            "Ext.carousel.Carousel",
+            "Ext.MessageBox"
         ]
     },
     "name": "MyController",
@@ -29,6 +30,13 @@
                 "fn": "onCarouselInitialize",
                 "implHandler": [
                     "console.log('onCarouselInitialize');",
+                    "",
+                    "component.on({",
+                    "    delegate: '> image',",
+                    "    scope: this,",
+                    "    tap: 'onAutoCarouselItemTap'",
+                    "});",
+                    "",
                     "var store = Ext.getStore('HomeCarouselItems');",
                     "",
                     "store.load({",
@@ -38,7 +46,8 @@
                     "        Ext.each(records, function(record) {",
                     "            items.push({",
                     "                xtype: 'image',",
-                    "                src: record.get('imgUrl')",
+                    "                src: record.get('imgUrl'),",
+                    "                record: record",
                     "            });",
                     "        });",
                     "",
@@ -103,6 +112,25 @@
             },
             "name": "onListInitialize",
             "designerId": "830e397d-4535-4446-b45e-dde265663a37"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "component, e, eOpts"
+                ],
+                "fn": "onAutoCarouselItemTap",
+                "implHandler": [
+                    "Ext.Msg.alert('Title', component.getRecord().get('imgUrl'), Ext.emptyFn);"
+                ]
+            },
+            "name": "onAutoCarouselItemTap",
+            "designerId": "5d3f47e1-9f4c-4954-9df4-9f4cad159f20"
         }
     ]
 }
