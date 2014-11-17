@@ -47,7 +47,7 @@ Ext.define('MyShop.view.Home.Home', {
                 },
                 {
                     xtype: 'button',
-                    iconCls: 'camera'
+                    iconCls: 'icon-qrcode'
                 }
             ]
         },

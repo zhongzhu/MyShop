@@ -6,8 +6,12 @@ $toolbar-base-color: rgba(25,133,208,1);
 
 
 /* _arch-other-start */
+@include icon-font('IcoMoon', inline-font-files('icomoon/fonts/icomoon.woff', woff,
+'icomoon/fonts/icomoon.ttf', truetype,'icomoon/fonts/icomoon.svg', svg));
+
 @include icon('cart');
 @include icon('camera');
+@include icon('icon-qrcode', '\e601', 'IcoMoon');
 
 .racks-h2 {
 font-size: 1.14em;

@@ -67,7 +67,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "align": null,
-                        "iconCls": "camera",
+                        "iconCls": "icon-qrcode",
                         "text": null
                     },
                     "name": "MyButton",
